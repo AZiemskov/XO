@@ -1,0 +1,3191 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Крестики-Нолики</title>
+ <style type="text/css">  
+ #name {
+    border: 1px solid black; border-collapse:  
+   }
+   table{margin: auto;}
+   .center{text-align:center;}
+ </style>    
+  <script>
+ var i=0;
+ var a=0;
+ var lt=0;
+ var t=0;
+ var rt=0;
+ var lc=0;
+ var c=0;
+ var rc=0;
+ var lb=0;
+ var b=0;
+ var rb=0;
+ </script>
+ </head>
+ <body> 
+ <table>
+ <tr>
+ <td>
+ <table id="name">
+       <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn1"></td>
+     <script>
+  btn1.onclick=function()
+ {
+  if(btn1.value=="" && (a==0 || a==1))
+  {
+  if(i%2==0)
+  {
+    btn1.value="X";
+    i++;
+    a=1;
+     if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn1.value="0";
+     i++;
+     a=1;
+      if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="")
+      {
+        a=0;
+      }
+     turn();
+  }
+ }
+}
+</script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn2"></td>
+        <script>
+
+  btn2.onclick=function()
+
+{
+   if(btn2.value=="" && (a==0 || a==1))
+  {
+  if(i%2==0)
+  {
+    btn2.value="X";
+    i++;
+    a=2;
+     if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="")
+      {
+        a=0;
+      }
+    turn();
+    
+  }
+  else
+  {
+    btn2.value="0";
+    i++;
+    a=2;
+     if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="")
+      {
+        a=0;
+      }
+    turn();
+    
+  }
+}
+}
+
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn3"></td>
+          <script>
+
+  btn3.onclick=function()
+{
+  if(btn3.value=="" && (a==0 || a==1)) 
+{
+  if(i%2==0)
+  {
+    btn3.value="X";
+     i++;
+     a=3;
+      if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn3.value="0";
+    i++;
+    a=3;
+    if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr> 
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn4"></td>
+    <script>
+btn4.onclick=function()
+{
+  if(btn4.value=="" && (a==0 || a==1)) 
+{
+  if(i%2==0)
+  {
+    btn4.value="X";
+      i++;
+      a=4;
+       if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn4.value="0";
+    i++;
+    a=4;
+     if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn5"></td>
+        <script>
+btn5.onclick=function()
+{
+   if(btn5.value=="" && (a==0 || a==1)) 
+{
+  if(i%2==0)
+  {
+    btn5.value="X";   
+      i++;
+      a=5;
+       if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn5.value="0";   
+    i++;
+    a=5;
+    if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn6"></td>
+        <script>
+btn6.onclick=function()
+{
+   if(btn6.value=="" && (a==0 || a==1)) 
+{
+  if(i%2==0)
+  {
+    btn6.value="X";
+      i++;
+      a=6;
+      if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn6.value="0";  
+    i++;
+    a=6;
+     if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn7"></td>
+            <script>
+btn7.onclick=function()
+{
+   if(btn7.value=="" && (a==0 || a==1)) 
+{
+  if(i%2==0)
+  {
+    btn7.value="X";
+      i++;
+      a=7;
+       if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn7.value="0";
+    i++;
+    a=7;
+      if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn8"></td>
+            <script>
+btn8.onclick=function()
+{
+   if(btn8.value=="" && (a==0 || a==1)) 
+{
+  if(i%2==0)
+  {
+    btn8.value="X"; 
+      i++;
+      a=8;
+        if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn8.value="0"; 
+    i++;
+    a=8;
+       if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn9"></td>
+            <script>
+btn9.onclick=function()
+{
+   if(btn9.value=="" && (a==0 || a==1)) 
+{
+  if(i%2==0)
+  {
+    btn9.value="X";    
+      i++;
+      a=9;
+         if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+   turn();
+    
+  }
+  else
+  {
+    btn9.value="0";   
+    i++;
+    a=9;
+    if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+      </tr>
+ </table>
+ </td>
+ <td>
+ <table id="name">
+  <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn10"></td>
+                <script>
+btn10.onclick=function()
+{
+   if(btn10.value=="" && (a==0 || a==2)) 
+{
+  if(i%2==0)
+  {
+    btn10.value="X";
+      i++;
+      a=1;
+      if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn10.value="0";   
+    i++;
+    a=1;
+     if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn11"></td>
+                <script>
+btn11.onclick=function()
+{
+   if(btn11.value=="" && (a==0 || a==2)) 
+{
+  if(i%2==0)
+  {
+    btn11.value="X";
+      i++;
+      a=2;
+       if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn11.value="0";
+    i++;
+    a=2;
+     if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn12"></td>
+                <script>
+
+btn12.onclick=function()
+{
+    if(btn12.value=="" && (a==0 || a==2)) 
+{
+  if(i%2==0)
+  {
+    btn12.value="X";
+      i++;
+      a=3;
+      if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn12.value="0";
+        i++;
+        a=3;
+        if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn13"></td>
+                <script>
+ 
+btn13.onclick=function()
+{
+  if(btn13.value=="" && (a==0 || a==2)) 
+{
+  if(i%2==0)
+  {
+    btn13.value="X";
+      i++;
+      a=4;
+       if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn13.value="0";
+    i++;
+    a=4;
+     if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script> 
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn14"></td>
+                <script>
+                
+btn14.onclick=function()
+{
+  if(btn14.value=="" && (a==0 || a==2)) 
+{ 
+  if(i%2==0)
+  {
+    btn14.value="X";
+      i++;
+      a=5;
+      if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn14.value="0";
+    i++;
+    a=5;
+    if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="")
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn15"></td>
+                <script>
+                
+btn15.onclick=function()
+{
+  if(btn15.value=="" && (a==0 || a==2)) 
+{   
+  if(i%2==0)
+  {
+    btn15.value="X";
+      i++;
+      a=6;
+       if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="")
+      {
+        a=0;
+      }
+      turn();
+
+    
+  }
+  else
+  {
+    btn15.value="0";
+    i++;
+    a=6;
+     if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="")
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn16"></td> 
+                <script>
+           
+btn16.onclick=function()
+{
+   if(btn16.value=="" && (a==0 || a==2)) 
+{     
+  if(i%2==0)
+  {
+    btn16.value="X";
+      i++;
+      a=7;
+        if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="")
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn16.value="0";
+    i++;
+    a=7;
+      if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="")
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn17"></td>
+                <script>
+                
+btn17.onclick=function()
+{
+   if(btn17.value=="" && (a==0 || a==2)) 
+{  
+  if(i%2==0)
+  {
+    btn17.value="X";
+      i++;
+      a=8;
+         if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="")
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn17.value="0";
+    i++;
+    a=8;
+       if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="")
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn18"></td>
+                <script>
+         
+btn18.onclick=function()
+{
+    if(btn18.value=="" && (a==0 || a==2)) 
+{ 
+  if(i%2==0)
+  {
+    btn18.value="X";
+      i++;
+      a=9;
+      if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn18.value="0";
+    i++;
+    a=9;
+    if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+     </tr>
+ </table>
+ </td>
+ <td>
+ <table id="name">
+  <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn19"></td>
+                <script>
+           
+btn19.onclick=function()
+{
+  if(btn19.value=="" && (a==0 || a==3)) 
+{ 
+  if(i%2==0)
+  {
+    btn19.value="X";
+      i++;
+      a=1;
+       if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn19.value="0";
+    i++;
+    a=1;
+     if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn20"></td>
+      <script>
+     
+btn20.onclick=function()
+{
+  if(btn20.value=="" && (a==0 || a==3)) 
+{    
+  if(i%2==0)
+  {
+    btn20.value="X";
+      i++;
+      a=2;
+       if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn20.value="0";
+    i++;
+    a=2;
+     if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn21"></td>
+                <script>
+            
+btn21.onclick=function()
+{
+   if(btn21.value=="" && (a==0 || a==3)) 
+{      
+  if(i%2==0)
+  {
+    btn21.value="X";
+      i++;
+      a=3;
+      if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn21.value="0";
+    i++;
+    a=3;
+    if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn22"></td>
+                <script>
+             
+btn22.onclick=function()
+{
+   if(btn22.value=="" && (a==0 || a==3)) 
+{     
+  if(i%2==0)
+  {
+    btn22.value="X";
+      i++;
+      a=4;
+       if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn22.value="0";
+    i++;
+    a=4;
+     if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn23"></td>
+                <script>
+             
+btn23.onclick=function()
+{
+  if(btn23.value=="" && (a==0 || a==3)) 
+{      
+  if(i%2==0)
+  {
+    btn23.value="X";
+      i++;
+      a=5;
+      if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn23.value="0";
+    i++;
+    a=5;
+    if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn24"></td>
+                <script>
+            
+btn24.onclick=function()
+{
+  if(btn24.value=="" && (a==0 || a==3)) 
+{       
+  if(i%2==0)
+  {
+    btn24.value="X";
+      i++;
+      a=6;
+       if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn24.value="0";
+    i++;
+    a=6;
+     if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn25"></td>
+                <script>
+             
+btn25.onclick=function()
+{
+  if(btn25.value=="" && (a==0 || a==3)) 
+{      
+  if(i%2==0)
+  {
+    btn25.value="X";
+      i++;
+       a=7;
+         if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+       turn();
+
+  }
+  else
+  {
+    btn25.value="0";
+    i++;
+    a=7;
+      if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn26"></td>
+                <script>
+          
+btn26.onclick=function()
+{
+   if(btn26.value=="" && (a==0 || a==3)) 
+{        
+  if(i%2==0)
+  {
+    btn26.value="X";
+      i++;
+      a=8;
+         if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn26.value="0";
+    i++;
+    a=8;
+       if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn27"></td>
+                <script>
+             
+btn27.onclick=function()
+{
+  if(btn27.value==""  && (a==0 || a==3)) 
+{      
+  if(i%2==0)
+  {
+    btn27.value="X";
+      i++;
+      a=9;
+       if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+  else
+  {
+    btn27.value="0";
+    i++;
+    a=9;
+     if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+    turn();
+
+  }
+}
+}
+ </script>
+     </tr>
+ </table>
+ </td>
+ </table>
+ <table>
+ <tr>
+ <td>
+ <table id="name">
+       <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn28"></td>
+                <script>
+             
+btn28.onclick=function()
+{
+  if(btn28.value==""  && (a==0 || a==4)) 
+{      
+  if(i%2==0)
+  {
+    btn28.value="X";
+      i++;
+      a=1;
+       if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn28.value="0";
+    i++;
+    a=1;
+     if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn29"></td>
+                <script>
+               
+btn29.onclick=function()
+{
+  if(btn29.value==""  && (a==0 || a==4)) 
+{    
+  if(i%2==0)
+  {
+    btn29.value="X";
+      i++;
+      a=2;
+       if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn29.value="0";
+    i++;
+    a=2;
+     if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn30"></td>
+                <script>
+               
+btn30.onclick=function()
+{
+  if(btn30.value==""  && (a==0 || a==4)) 
+{    
+  if(i%2==0)
+  {
+    btn30.value="X";
+      i++;
+      a=3;
+      if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+       turn();
+  }
+  else
+  {
+    btn30.value="0";
+    i++;
+    a=3;
+    if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn31"></td>
+                <script>
+              
+btn31.onclick=function()
+{
+  if(btn31.value==""  && (a==0 || a==4)) 
+{     
+  if(i%2==0)
+  {
+    btn31.value="X";
+      i++;
+    a=4;
+    if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn31.value="0";
+    i++;
+    a=4;
+     if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn32"></td>
+                <script>
+             
+btn32.onclick=function()
+{
+   if(btn32.value==""  && (a==0 || a==4)) 
+{     
+  if(i%2==0)
+  {
+    btn32.value="X";
+      i++;
+      a=5;
+      if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="" )
+      {
+        a=0;
+      }
+       turn();
+  }
+  else
+  {
+    btn32.value="0";
+    i++;
+    a=5;
+    if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn33"></td>
+                <script>
+               
+btn33.onclick=function()
+{
+   if(btn33.value==""  && (a==0 || a==4)) 
+{   
+  if(i%2==0)
+  {
+    btn33.value="X";
+      i++;
+    a=6;
+     if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn33.value="0";
+    i++;
+    a=6;
+     if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn34"></td>
+                <script>
+         
+btn34.onclick=function()
+{
+   if(btn34.value==""  && (a==0 || a==4)) 
+{         
+  if(i%2==0)
+  {
+    btn34.value="X";
+      i++;
+    a=7;
+      if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn34.value="0";
+    i++;
+    a=7;
+      if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn35"></td>
+                <script>
+               
+btn35.onclick=function()
+{
+   if(btn35.value==""  && (a==0 || a==4)) 
+{   
+  if(i%2==0)
+  {
+    btn35.value="X";
+      i++;
+    a=8;
+       if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn35.value="0";
+    i++;
+    a=8;
+       if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+     turn();
+    
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn36"></td>
+                <script>
+           
+btn36.onclick=function()
+{
+   if(btn36.value=="" && (a==0 || a==4)) 
+{       
+  if(i%2==0)
+  {
+    btn36.value="X";
+      i++;
+    a=9;
+     if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn36.value="0";
+    i++;
+    a=9;
+     if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+      </tr>
+ </table>
+ </td>
+ <td>
+ <table id="name">
+  <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn37"></td>
+                <script>
+btn37.onclick=function()
+{
+          
+ if(btn37.value==""  && (a==0 || a==5)) 
+{   
+  if(i%2==0)
+  {
+    btn37.value="X";
+          i++;
+          a=1;
+           if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn37.value="0";
+    i++;
+    a=1;
+     if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn38"></td>
+                  <script>
+              
+btn38.onclick=function()
+{
+  if(btn38.value=="" && (a==0 || a==5)) 
+{       
+  if(i%2==0)
+  {
+    btn38.value="X";
+      i++;
+    a=2;
+     if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn38.value="0";
+    i++;
+    a=2;
+     if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn39"></td>
+                    <script>
+            
+btn39.onclick=function()
+{
+  if(btn39.value=="" && (a==0 || a==5)) 
+{           
+  if(i%2==0)
+  {
+    btn39.value="X";
+      i++;
+    a=3;
+    if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+ turn();
+  }
+  else
+  {
+    btn39.value="0";
+    i++;
+    a=3;
+    if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn40"></td>
+                    <script>
+    
+  
+    btn40.onclick=function()
+{
+   if(btn40.value=="" && (a==0 || a==5)) 
+{                  
+
+   if(i%2==0)
+  {
+    btn40.value="X";
+      i++;
+    a=4; 
+ if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn40.value="0";
+    i++;
+    a=4;
+     if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn41"></td>
+                    <script>
+                   
+btn41.onclick=function()
+{
+  if(btn41.value=="" && (a==0 || a==5)) 
+{    
+  if(i%2==0)
+  {
+    btn41.value="X";
+      i++;
+      a=5;
+      if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn41.value="0";
+    i++;
+    a=5;
+    if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn42"></td>
+                    <script>
+                    
+btn42.onclick=function()
+{
+  if(btn42.value=="" && (a==0 || a==5)) 
+{   
+  if(i%2==0)
+  {
+    btn42.value="X";
+      i++;
+    a=6;
+ if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn42.value="0";
+    i++;
+    a=6; 
+ if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="" )
+      {
+        a=0;
+      }
+    turn();
+    
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn43"></td>
+                    <script>
+                
+btn43.onclick=function()
+{
+  if(btn43.value=="" && (a==0 || a==5)) 
+{       
+  if(i%2==0)
+  {
+    btn43.value="X";
+      i++;
+      a=7;
+        if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn43.value="0";
+    i++;
+    a=7;
+      if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn44"></td>
+                    <script>
+                  
+btn44.onclick=function()
+{
+  if(btn44.value=="" && (a==0 || a==5)) 
+{     
+  if(i%2==0)
+  {
+    btn44.value="X";
+      i++;
+      a=8;
+         if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn44.value="0";
+    i++;
+    a=8;
+       if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn45"></td>
+                    <script>
+                  
+btn45.onclick=function()
+{
+  if(btn45.value=="" && (a==0 || a==5)) 
+{     
+  if(i%2==0)
+  {
+    btn45.value="X";
+      i++;
+      a=9;
+       if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn45.value="0";
+    i++;
+    a=9;
+     if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+     </tr>
+ </table>
+ </td>
+ <td>
+ <table id="name">
+  <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn46"></td>
+                    <script>
+          
+btn46.onclick=function()
+{
+  if(btn46.value=="" && (a==0 || a==6)) 
+{  
+  if(i%2==0)
+  {
+    btn46.value="X";
+      i++;
+    a=1; 
+     if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn46.value="0";
+    i++;
+    a=1;
+ if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn47"></td>
+                    <script>
+           
+btn47.onclick=function()
+{
+   if(btn47.value=="" && (a==0 || a==6)) 
+{           
+  if(i%2==0)
+  {
+    btn47.value="X";
+      i++;
+      a=2;
+       if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn47.value="0";
+    i++;
+    a=2; 
+ if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn48"></td>
+                    <script>
+            
+btn48.onclick=function()
+{
+   if(btn48.value=="" && (a==0 || a==6)) 
+{          
+  if(i%2==0)
+  {
+    btn48.value="X";
+      i++;
+    a=3; 
+if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn48.value="0";
+    i++;
+    a=3;
+if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+         </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn49"></td>
+                    <script>
+                
+btn49.onclick=function()
+{
+  if(btn49.value=="" && (a==0 || a==6)) 
+{       
+  if(i%2==0)
+  {
+    btn49.value="X";
+      i++;
+    a=4; 
+ if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn49.value="0";
+    i++;
+    a=4;
+ if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn50"></td>
+                    <script>
+              
+btn50.onclick=function()
+{
+   if(btn50.value=="" && (a==0 || a==6)) 
+{        
+  if(i%2==0)
+  {
+    btn50.value="X";
+      i++;
+    a=5; 
+if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn50.value="0";
+    i++;
+    a=5; 
+if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn51"></td>
+                    <script>
+              
+btn51.onclick=function()
+{
+      if(btn51.value=="" && (a==0 || a==6)) 
+{     
+  if(i%2==0)
+  {
+    btn51.value="X";
+      i++;
+      a=6;
+ if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="" )
+      {
+        a=0;
+      }
+       turn();
+    
+  }
+  else
+  {
+    btn51.value="0";
+    i++;
+    a=6;
+ if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+    
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn52"></td>
+                    <script>
+                 
+btn52.onclick=function()
+{
+  if(btn52.value=="" && (a==0 || a==6)) 
+{      
+  if(i%2==0)
+  {
+    btn52.value="X";
+      i++;
+    a=7; 
+  if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn52.value="0";
+    i++;
+    a=7;
+  if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn53"></td>
+                    <script>
+                 
+btn53.onclick=function()
+{
+   if(btn53.value=="" && (a==0 || a==6)) 
+{     
+  if(i%2==0)
+  {
+    btn53.value="X";
+      i++;
+    a=8; 
+   if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn53.value="0";
+    i++;
+    a=8;
+       if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn54"></td>
+                    <script>
+           
+btn54.onclick=function()
+{
+   if(btn54.value=="" && (a==0 || a==6)) 
+{           
+  if(i%2==0)
+  {
+    btn54.value="X";
+      i++;
+    a=9;
+ if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn54.value="0";
+    i++;
+    a=9;
+ if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+     </tr>
+ </table>
+ </td>
+ </table>
+ <table>
+ <tr>
+ <td>
+ <table id="name">
+       <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn55"></td>
+                    <script>
+            
+btn55.onclick=function()
+{
+    if(btn55.value=="" && (a==0 || a==7)) 
+{         
+  if(i%2==0)
+  {
+    btn55.value="X";
+      i++;
+    a=1; 
+ if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn55.value="0";
+    i++;
+    a=1; 
+ if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn56"></td>
+                    <script>
+                
+btn56.onclick=function()
+{
+   if(btn56.value=="" && (a==0 || a==7)) 
+{      
+  if(i%2==0)
+  {
+    btn56.value="X";
+      i++;
+    a=2;
+ if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="")
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn56.value="0";
+    i++;
+    a=2;
+ if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn57"></td>
+                    <script>
+
+btn57.onclick=function()
+{
+   if(btn57.value=="" && (a==0 || a==7)) 
+{  
+  if(i%2==0)
+  {
+    btn57.value="X";
+      i++;
+    a=3; 
+if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn57.value="0";
+    i++;
+    a=3;
+if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn58"></td>
+                    <script>
+                
+btn58.onclick=function()
+{
+   if(btn58.value=="" && (a==0 || a==7)) 
+{      
+  if(i%2==0)
+  {
+    btn58.value="X";
+      i++;
+    a=4; 
+ if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn58.value="0";
+    i++;
+    a=4;
+ if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn59"></td>
+                    <script>
+               
+btn59.onclick=function()
+{
+   if(btn59.value=="" && (a==0 || a==7)) 
+{       
+  if(i%2==0)
+  {
+    btn59.value="X";
+      i++;
+    a=5;
+if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn59.value="0";
+    i++;
+    a=5; 
+if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn60"></td>
+                    <script>
+                 
+btn60.onclick=function()
+{
+  if(btn60.value=="" && (a==0 || a==7)) 
+{      
+  if(i%2==0)
+  {
+    btn60.value="X";
+      i++;
+    a=6;
+ if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn60.value="0";
+    i++;
+    a=6; 
+ if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn61"></td>
+                    <script>
+                   
+btn61.onclick=function()
+{
+   if(btn61.value=="" && (a==0 || a==7)) 
+{   
+  if(i%2==0)
+  {
+    btn61.value="X";
+      i++;
+    a=7;
+  if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn61.value="0";
+    i++;
+    a=7; 
+  if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+    turn();
+    
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn62"></td>
+                    <script>
+                   
+btn62.onclick=function()
+{ 
+  if(btn62.value=="" && (a==0 || a==7)) 
+{   
+  if(i%2==0)
+  {
+    btn62.value="X";
+      i++;
+      a=8; 
+   if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+      turn();
+    
+  }
+  else
+  {
+    btn62.value="0";
+    i++;
+    a=8;
+       if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn63"></td>
+                    <script>
+           
+btn63.onclick=function()
+{
+    if(btn63.value=="" && (a==0 || a==7)) 
+{          
+  if(i%2==0)
+  {
+    btn63.value="X";
+      i++;
+    a=9; 
+ if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn63.value="0";
+    i++;
+    a=9;
+ if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+      </tr>
+ </table>
+ </td>
+ <td>
+ <table id="name">
+  <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn64"></td>
+                    <script>
+                 
+btn64.onclick=function()
+{
+   if(btn64.value=="" && (a==0 || a==8)) 
+{     
+  if(i%2==0)
+  {
+    btn64.value="X";
+      i++;
+    a=1; 
+ if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn64.value="0";
+    i++;
+    a=1;
+ if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn65"></td>
+     <script>
+      
+btn65.onclick=function()
+{
+  if(btn65.value=="" && (a==0 || a==8)) 
+{  
+  if(i%2==0)
+  {
+    btn65.value="X";
+      i++;
+    a=2;
+ if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn65.value="0";
+    i++;
+    a=2; 
+ if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn66"></td>
+                    <script>
+           
+btn66.onclick=function()
+{
+   if(btn66.value=="" && (a==0 || a==8)) 
+{           
+  if(i%2==0)
+  {
+    btn66.value="X";
+      i++;
+    a=3;
+if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn66.value="0";
+    i++;
+    a=3;
+if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn67"></td>
+                    <script>
+                
+btn67.onclick=function()
+{
+   if(btn67.value=="" && (a==0 || a==8)) 
+{      
+  if(i%2==0)
+  {
+    btn67.value="X";
+      i++;
+    a=4; 
+ if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn67.value="0";
+    i++;
+    a=4;
+ if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn68"></td>
+                    <script>
+  
+btn68.onclick=function()
+{
+  if(btn68.value=="" && (a==0 || a==8)) 
+ { 
+  if(i%2==0)
+  {
+    btn68.value="X";
+      i++;
+    a=5; 
+if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn68.value="0";
+    i++;
+    a=5;
+    if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn69"></td>
+                    <script>
+                  
+btn69.onclick=function()
+{
+   if(btn69.value=="" && (a==0 || a==8)) 
+{    
+  if(i%2==0)
+  {
+    btn69.value="X";
+      i++;
+    a=6;
+ if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn69.value="0";
+    i++;
+   a=6; 
+    if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!=""  )
+      {
+        a=0;
+      }
+       turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn70"></td>
+                    <script>
+              
+btn70.onclick=function()
+{
+  if(btn70.value=="" && (a==0 || a==8)) 
+{         
+  if(i%2==0)
+  {
+    btn70.value="X";
+      i++;
+    a=7; 
+  if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn70.value="0";
+    i++;
+    a=7; 
+  if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn71"></td>
+                    <script>
+               
+btn71.onclick=function()
+{
+   if(btn71.value=="" && (a==0 || a==8)) 
+{       
+  if(i%2==0)
+  {
+    btn71.value="X";
+      i++;
+    a=8; 
+   if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn71.value="0";
+    i++;
+    a=8;
+   if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn72"></td>
+                    <script>
+                    
+btn72.onclick=function()
+{
+  if(btn72.value=="" && (a==0 || a==8)) 
+{   
+  if(i%2==0)
+  {
+    btn72.value="X";
+      i++;
+    a=9; 
+ if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn72.value="0";
+    i++;
+    a=9;
+ if(btn73.value!="" && btn74.value!="" && btn75.value!="" && btn76.value!="" && btn77.value!="" && btn78.value!="" && btn79.value!="" && btn80.value!="" && btn81.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+     </tr>
+ </table>
+ </td>
+ <td>
+ <table id="name">
+  <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn73"></td>
+                    <script>
+               
+btn73.onclick=function()
+{
+    if(btn73.value=="" && (a==0 || a==9)) 
+{      
+  if(i%2==0)
+  {
+    btn73.value="X";
+      i++;
+    a=1; 
+ if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  } 
+  else
+  {
+    btn73.value="0";
+    i++;
+    a=1; 
+ if(btn1.value!="" && btn2.value!="" && btn3.value!="" && btn4.value!="" && btn5.value!="" && btn6.value!="" && btn7.value!="" && btn8.value!="" && btn9.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn74"></td>
+                    <script>
+                
+btn74.onclick=function()
+{
+  if(btn74.value=="" && (a==0 || a==9)) 
+{       
+  if(i%2==0)
+  {
+    btn74.value="X";
+      i++;
+    a=2; 
+ if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn74.value="0";
+    i++;
+    a=2;
+ if(btn10.value!="" && btn11.value!="" && btn12.value!="" && btn13.value!="" && btn14.value!="" && btn15.value!="" && btn16.value!="" && btn17.value!="" && btn18.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn75"></td>
+                    <script>
+                
+btn75.onclick=function()
+{
+   if(btn75.value=="" && (a==0 || a==9)) 
+{      
+  if(i%2==0)
+  {
+    btn75.value="X";
+      i++;
+    a=3; 
+if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn75.value="0";
+    i++;
+    a=3;
+if(btn19.value!="" && btn20.value!="" && btn21.value!="" && btn22.value!="" && btn23.value!="" && btn24.value!="" && btn25.value!="" && btn26.value!="" && btn27.value!=""  )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn76"></td>
+                    <script>
+               
+btn76.onclick=function()
+{
+    if(btn76.value=="" && (a==0 || a==9)) 
+{      
+  if(i%2==0)
+  {
+    btn76.value="X";
+      i++;
+    a=4; 
+ if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn76.value="0";
+    i++;
+    a=4;
+ if(btn28.value!="" && btn29.value!="" && btn30.value!="" && btn31.value!="" && btn32.value!="" && btn33.value!="" && btn34.value!="" && btn35.value!="" && btn36.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn77"></td>
+                    <script>
+               
+btn77.onclick=function()
+{
+    if(btn77.value=="" && (a==0 || a==9)) 
+{      
+  if(i%2==0)
+  {
+    btn77.value="X";
+      i++;
+    a=5; 
+if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn77.value="0";
+    i++;
+    a=5; 
+if(btn37.value!="" && btn38.value!="" && btn39.value!="" && btn40.value!="" && btn41.value!="" && btn42.value!="" && btn43.value!="" && btn44.value!="" && btn45.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn78"></td>
+                    <script>
+                  
+btn78.onclick=function()
+{
+   if(btn78.value=="" && (a==0 || a==9)) 
+{    
+  if(i%2==0)
+  {
+    btn78.value="X";
+      i++;
+    a=6; 
+ if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!="" )
+      {
+        a=0;
+      }
+    turn();
+  }
+  else
+  {
+    btn78.value="0";
+    i++;
+    a=6; 
+ if(btn46.value!="" && btn47.value!="" && btn48.value!="" && btn49.value!="" && btn50.value!="" && btn51.value!="" && btn52.value!="" && btn53.value!="" && btn54.value!=""  )
+      {
+        a=0;
+      }
+    turn();
+  }
+}
+}
+ </script>
+     </tr>
+      <tr>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn79"></td>
+                    <script>
+                
+btn79.onclick=function()
+{
+  if(btn79.value=="" && (a==0 || a==9)) 
+{       
+  if(i%2==0)
+  {
+    btn79.value="X";
+      i++;
+    a=7;
+  if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn79.value="0";
+    i++;
+    a=7;
+  if(btn55.value!="" && btn56.value!="" && btn57.value!="" && btn58.value!="" && btn59.value!="" && btn60.value!="" && btn61.value!="" && btn62.value!="" && btn63.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn80"></td>
+                    <script>
+                   
+btn80.onclick=function()
+{
+  if(btn80.value=="" && (a==0 || a==9)) 
+{    
+  if(i%2==0)
+  {
+    btn80.value="X";
+      i++;
+    a=8;
+   if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+  else
+  {
+    btn80.value="0";
+    i++;
+    a=8;
+   if(btn64.value!="" && btn65.value!="" && btn66.value!="" && btn67.value!="" && btn68.value!="" && btn69.value!="" && btn70.value!="" && btn71.value!="" && btn72.value!="" )
+      {
+        a=0;
+      }
+     turn();
+  }
+}
+}
+ </script>
+    <td><input type="button" style="width:24px;height:20px" value="" id="btn81"></td>
+                    <script>
+btn81.onclick=function()
+{
+if(btn81.value=="" && (a==0 || a==9)) 
+{  
+
+  if(i%2==0)
+  {
+    btn81.value="X";
+      i++;
+    a=9; turn();
+  }
+  else
+  {
+    btn81.value="0";
+    i++;
+    a=9; turn();
+  }
+}
+}
+ </script>
+     </tr>
+ </table>
+ </td>
+ </table>
+  <div class = "center">
+ <input type="button"  value="Ходят крестики" style="width:275px;height:20px;margin-top: 10px" id="btn">
+  <div>
+ <script>
+ function turn()
+ {
+ if(i%2==0)
+  {
+    btn.value="Ходят крестики";
+  }
+  else
+  {
+    btn.value="Ходят нолики";
+  }
+if(((btn1.value=="X" && btn2.value=="X" && btn3.value=="X") || (btn4.value=="X" && btn5.value=="X" && btn6.value=="X") || (btn7.value=="X" && btn8.value=="X" && btn9.value=="X") || (btn1.value=="X" && btn4.value=="X" && btn7.value=="X") || (btn2.value=="X" && btn5.value=="X" && btn8.value=="X") || (btn3.value=="X" && btn6.value=="X" && btn9.value=="X") || (btn1.value=="X" && btn5.value=="X" && btn9.value=="X") || (btn3.value=="X" && btn5.value=="X" && btn7.value=="X")) && lt==0)
+{
+  lt=1; 
+ btn1.style="background-color:red;width:24px;height:20px"; 
+ btn2.style="background-color:red;width:24px;height:20px";
+ btn3.style="background-color:red;width:24px;height:20px";
+ btn4.style="background-color:red;width:24px;height:20px";
+ btn5.style="background-color:red;width:24px;height:20px";
+ btn6.style="background-color:red;width:24px;height:20px";
+ btn7.style="background-color:red;width:24px;height:20px";
+ btn8.style="background-color:red;width:24px;height:20px";
+ btn9.style="background-color:red;width:24px;height:20px";
+}
+if(((btn1.value=="0" && btn2.value=="0" && btn3.value=="0") || (btn4.value=="0" && btn5.value=="0" && btn6.value=="0") || (btn7.value=="0" && btn8.value=="0" && btn9.value=="0") || (btn1.value=="0" && btn4.value=="0" && btn7.value=="0") || (btn2.value=="0" && btn5.value=="0" && btn8.value=="0") || (btn3.value=="0" && btn6.value=="0" && btn9.value=="0") || (btn1.value=="0" && btn5.value=="0" && btn9.value=="0") || (btn3.value=="0" && btn5.value=="0" && btn7.value=="0")) && lt==0)
+{
+  lt=2;
+ btn1.style="background-color:blue;width:24px;height:20px";
+ btn2.style="background-color:blue;width:24px;height:20px";
+ btn3.style="background-color:blue;width:24px;height:20px";
+ btn4.style="background-color:blue;width:24px;height:20px";
+ btn5.style="background-color:blue;width:24px;height:20px";
+ btn6.style="background-color:blue;width:24px;height:20px";
+ btn7.style="background-color:blue;width:24px;height:20px";
+ btn8.style="background-color:blue;width:24px;height:20px";
+ btn9.style="background-color:blue;width:24px;height:20px";
+}
+if((btn10.value=="X" && btn11.value=="X" && btn12.value=="X") || (btn13.value=="X" && btn14.value=="X" && btn15.value=="X") || (btn16.value=="X" && btn17.value=="X" && btn18.value=="X") || (btn10.value=="X" && btn13.value=="X" && btn16.value=="X") || (btn11.value=="X" && btn14.value=="X" && btn17.value=="X") || (btn12.value=="X" && btn15.value=="X" && btn18.value=="X") || (btn10.value=="X" && btn14.value=="X" && btn18.value=="X") || (btn12.value=="X" && btn14.value=="X" && btn16.value=="X") && t==0)
+{
+  t=1;
+ btn10.style="background-color:red;width:24px;height:20px";
+ btn11.style="background-color:red;width:24px;height:20px";
+ btn12.style="background-color:red;width:24px;height:20px";
+ btn13.style="background-color:red;width:24px;height:20px";
+ btn14.style="background-color:red;width:24px;height:20px";
+ btn15.style="background-color:red;width:24px;height:20px";
+ btn16.style="background-color:red;width:24px;height:20px";
+ btn17.style="background-color:red;width:24px;height:20px";
+ btn18.style="background-color:red;width:24px;height:20px";
+}
+if(((btn10.value=="0" && btn11.value=="0" && btn12.value=="0") || (btn13.value=="0" && btn14.value=="0" && btn15.value=="0") || (btn16.value=="0" && btn17.value=="0" && btn18.value=="0") || (btn10.value=="0" && btn13.value=="0" && btn16.value=="0") || (btn11.value=="0" && btn14.value=="0" && btn17.value=="0") || (btn12.value=="0" && btn15.value=="0" && btn18.value=="0") || (btn10.value=="0" && btn14.value=="0" && btn18.value=="0") || (btn12.value=="0" && btn14.value=="0" && btn16.value=="0"))&& t==0)
+{
+  t=2;
+ btn10.style="background-color:blue;width:24px;height:20px";
+ btn11.style="background-color:blue;width:24px;height:20px";
+ btn12.style="background-color:blue;width:24px;height:20px";
+ btn13.style="background-color:blue;width:24px;height:20px";
+ btn14.style="background-color:blue;width:24px;height:20px";
+ btn15.style="background-color:blue;width:24px;height:20px";
+ btn16.style="background-color:blue;width:24px;height:20px";
+ btn17.style="background-color:blue;width:24px;height:20px";
+ btn18.style="background-color:blue;width:24px;height:20px";
+}
+if(((btn19.value=="X" && btn20.value=="X" && btn21.value=="X") || (btn22.value=="X" && btn23.value=="X" && btn24.value=="X") || (btn25.value=="X" && btn26.value=="X" && btn27.value=="X") || (btn19.value=="X" && btn22.value=="X" && btn25.value=="X") || (btn20.value=="X" && btn23.value=="X" && btn26.value=="X") || (btn21.value=="X" && btn24.value=="X" && btn27.value=="X") || (btn19.value=="X" && btn23.value=="X" && btn27.value=="X") || (btn21.value=="X" && btn23.value=="X" && btn25.value=="X")) && rt==0)
+{
+  rt=1; 
+ btn19.style="background-color:red;width:24px;height:20px";
+ btn20.style="background-color:red;width:24px;height:20px";
+ btn21.style="background-color:red;width:24px;height:20px";
+ btn22.style="background-color:red;width:24px;height:20px";
+ btn23.style="background-color:red;width:24px;height:20px";
+ btn24.style="background-color:red;width:24px;height:20px";
+ btn25.style="background-color:red;width:24px;height:20px";
+ btn26.style="background-color:red;width:24px;height:20px";
+ btn27.style="background-color:red;width:24px;height:20px";
+
+}
+if(((btn19.value=="0" && btn20.value=="0" && btn21.value=="0") || (btn22.value=="0" && btn23.value=="0" && btn24.value=="0") || (btn25.value=="0" && btn26.value=="0" && btn27.value=="0") || (btn19.value=="0" && btn22.value=="0" && btn25.value=="0") || (btn20.value=="0" && btn23.value=="0" && btn26.value=="0") || (btn21.value=="0" && btn24.value=="0" && btn27.value=="0") || (btn19.value=="0" && btn23.value=="0" && btn27.value=="0") || (btn21.value=="0" && btn23.value=="0" && btn25.value=="0")) && rt==0)
+{
+  rt=2;
+ btn19.style="background-color:blue;width:24px;height:20px";
+ btn20.style="background-color:blue;width:24px;height:20px";
+ btn21.style="background-color:blue;width:24px;height:20px";
+ btn22.style="background-color:blue;width:24px;height:20px";
+ btn23.style="background-color:blue;width:24px;height:20px";
+ btn24.style="background-color:blue;width:24px;height:20px";
+ btn25.style="background-color:blue;width:24px;height:20px";
+ btn26.style="background-color:blue;width:24px;height:20px";
+ btn27.style="background-color:blue;width:24px;height:20px";
+}
+if(((btn28.value=="X" && btn29.value=="X" && btn30.value=="X") || (btn31.value=="X" && btn32.value=="X" && btn33.value=="X") || (btn34.value=="X" && btn35.value=="X" && btn36.value=="X") || (btn28.value=="X" && btn31.value=="X" && btn34.value=="X") || (btn29.value=="X" && btn32.value=="X" && btn35.value=="X") || (btn30.value=="X" && btn33.value=="X" && btn36.value=="X") || (btn28.value=="X" && btn32.value=="X" && btn36.value=="X") || (btn30.value=="X" && btn32.value=="X" && btn34.value=="X")) && lc==0)
+{
+  lc=1; 
+ btn28.style="background-color:red;width:24px;height:20px";
+ btn29.style="background-color:red;width:24px;height:20px";
+ btn30.style="background-color:red;width:24px;height:20px";
+ btn31.style="background-color:red;width:24px;height:20px";
+ btn32.style="background-color:red;width:24px;height:20px";
+ btn33.style="background-color:red;width:24px;height:20px";
+ btn34.style="background-color:red;width:24px;height:20px";
+ btn35.style="background-color:red;width:24px;height:20px";
+ btn36.style="background-color:red;width:24px;height:20px";
+
+}
+if(((btn28.value=="0" && btn29.value=="0" && btn30.value=="0") || (btn31.value=="0" && btn32.value=="0" && btn33.value=="0") || (btn34.value=="0" && btn35.value=="0" && btn36.value=="0") || (btn28.value=="0" && btn31.value=="0" && btn34.value=="0") || (btn29.value=="0" && btn32.value=="0" && btn35.value=="0") || (btn30.value=="0" && btn33.value=="0" && btn36.value=="0") || (btn28.value=="0" && btn32.value=="0" && btn36.value=="0") || (btn30.value=="0" && btn32.value=="0" && btn34.value=="0")) && lc==0)
+{
+ lc=2;
+ btn28.style="background-color:blue;width:24px;height:20px";
+ btn29.style="background-color:blue;width:24px;height:20px";
+ btn30.style="background-color:blue;width:24px;height:20px";
+ btn31.style="background-color:blue;width:24px;height:20px";
+ btn32.style="background-color:blue;width:24px;height:20px";
+ btn33.style="background-color:blue;width:24px;height:20px";
+ btn34.style="background-color:blue;width:24px;height:20px";
+ btn35.style="background-color:blue;width:24px;height:20px";
+ btn36.style="background-color:blue;width:24px;height:20px";
+}
+if(((btn37.value=="X" && btn38.value=="X" && btn39.value=="X") || (btn40.value=="X" && btn41.value=="X" && btn42.value=="X") || (btn43.value=="X" && btn44.value=="X" && btn45.value=="X") || (btn37.value=="X" && btn40.value=="X" && btn43.value=="X") || (btn38.value=="X" && btn41.value=="X" && btn44.value=="X") || (btn39.value=="X" && btn42.value=="X" && btn45.value=="X") || (btn37.value=="X" && btn41.value=="X" && btn45.value=="X") || (btn39.value=="X" && btn41.value=="X" && btn43.value=="X")) && c==0)
+{
+  c=1; 
+ btn37.style="background-color:red;width:24px;height:20px";
+ btn38.style="background-color:red;width:24px;height:20px";
+ btn39.style="background-color:red;width:24px;height:20px";
+ btn40.style="background-color:red;width:24px;height:20px";
+ btn41.style="background-color:red;width:24px;height:20px";
+ btn42.style="background-color:red;width:24px;height:20px";
+ btn43.style="background-color:red;width:24px;height:20px";
+ btn44.style="background-color:red;width:24px;height:20px";
+ btn45.style="background-color:red;width:24px;height:20px";
+
+}
+if(((btn37.value=="0" && btn38.value=="0" && btn39.value=="0") || (btn40.value=="0" && btn41.value=="0" && btn42.value=="0") || (btn43.value=="0" && btn44.value=="0" && btn45.value=="0") || (btn37.value=="0" && btn40.value=="0" && btn43.value=="0") || (btn38.value=="0" && btn41.value=="0" && btn44.value=="0") || (btn39.value=="0" && btn42.value=="0" && btn45.value=="0") || (btn37.value=="0" && btn41.value=="0" && btn45.value=="0") || (btn39.value=="0" && btn41.value=="0" && btn43.value=="0")) && c==0)
+{
+ c=2;
+ btn37.style="background-color:blue;width:24px;height:20px";
+ btn38.style="background-color:blue;width:24px;height:20px";
+ btn39.style="background-color:blue;width:24px;height:20px";
+ btn40.style="background-color:blue;width:24px;height:20px";
+ btn41.style="background-color:blue;width:24px;height:20px";
+ btn42.style="background-color:blue;width:24px;height:20px";
+ btn43.style="background-color:blue;width:24px;height:20px";
+ btn44.style="background-color:blue;width:24px;height:20px";
+ btn45.style="background-color:blue;width:24px;height:20px";
+}
+if(((btn46.value=="X" && btn47.value=="X" && btn48.value=="X") || (btn49.value=="X" && btn50.value=="X" && btn51.value=="X") || (btn52.value=="X" && btn53.value=="X" && btn54.value=="X") || (btn46.value=="X" && btn49.value=="X" && btn52.value=="X") || (btn47.value=="X" && btn50.value=="X" && btn53.value=="X") || (btn48.value=="X" && btn51.value=="X" && btn54.value=="X") || (btn46.value=="X" && btn50.value=="X" && btn54.value=="X") || (btn48.value=="X" && btn50.value=="X" && btn52.value=="X")) && rc==0)
+{
+  rc=1; 
+ btn46.style="background-color:red;width:24px;height:20px";
+ btn47.style="background-color:red;width:24px;height:20px";
+ btn48.style="background-color:red;width:24px;height:20px";
+ btn49.style="background-color:red;width:24px;height:20px";
+ btn50.style="background-color:red;width:24px;height:20px";
+ btn51.style="background-color:red;width:24px;height:20px";
+ btn52.style="background-color:red;width:24px;height:20px";
+ btn53.style="background-color:red;width:24px;height:20px";
+ btn54.style="background-color:red;width:24px;height:20px";
+
+}
+if(((btn46.value=="0" && btn47.value=="0" && btn48.value=="0") || (btn49.value=="0" && btn50.value=="0" && btn51.value=="0") || (btn52.value=="0" && btn53.value=="0" && btn54.value=="0") || (btn46.value=="0" && btn49.value=="0" && btn52.value=="0") || (btn47.value=="0" && btn50.value=="0" && btn53.value=="0") || (btn48.value=="0" && btn51.value=="0" && btn54.value=="0") || (btn46.value=="0" && btn50.value=="0" && btn54.value=="0") || (btn48.value=="0" && btn50.value=="0" && btn52.value=="0"))&& rc==0)
+{
+ rc=2;
+ btn46.style="background-color:blue;width:24px;height:20px";
+ btn47.style="background-color:blue;width:24px;height:20px";
+ btn48.style="background-color:blue;width:24px;height:20px";
+ btn49.style="background-color:blue;width:24px;height:20px";
+ btn50.style="background-color:blue;width:24px;height:20px";
+ btn51.style="background-color:blue;width:24px;height:20px";
+ btn52.style="background-color:blue;width:24px;height:20px";
+ btn53.style="background-color:blue;width:24px;height:20px";
+ btn54.style="background-color:blue;width:24px;height:20px";
+}
+if(((btn55.value=="X" && btn56.value=="X" && btn57.value=="X") || (btn58.value=="X" && btn59.value=="X" && btn60.value=="X") || (btn61.value=="X" && btn62.value=="X" && btn63.value=="X") || (btn55.value=="X" && btn58.value=="X" && btn61.value=="X") || (btn56.value=="X" && btn59.value=="X" && btn62.value=="X") || (btn57.value=="X" && btn60.value=="X" && btn63.value=="X") || (btn55.value=="X" && btn59.value=="X" && btn63.value=="X") || (btn57.value=="X" && btn59.value=="X" && btn61.value=="X")) && lb==0)
+{
+  lb=1; 
+ btn55.style="background-color:red;width:24px;height:20px";
+ btn56.style="background-color:red;width:24px;height:20px";
+ btn57.style="background-color:red;width:24px;height:20px";
+ btn58.style="background-color:red;width:24px;height:20px";
+ btn59.style="background-color:red;width:24px;height:20px";
+ btn60.style="background-color:red;width:24px;height:20px";
+ btn61.style="background-color:red;width:24px;height:20px";
+ btn62.style="background-color:red;width:24px;height:20px";
+ btn63.style="background-color:red;width:24px;height:20px";
+
+}
+if(((btn55.value=="0" && btn56.value=="0" && btn57.value=="0") || (btn58.value=="0" && btn59.value=="0" && btn60.value=="0") || (btn61.value=="0" && btn62.value=="0" && btn63.value=="0") || (btn55.value=="0" && btn58.value=="0" && btn61.value=="0") || (btn56.value=="0" && btn59.value=="0" && btn62.value=="0") || (btn57.value=="0" && btn60.value=="0" && btn63.value=="0") || (btn55.value=="0" && btn59.value=="0" && btn63.value=="0") || (btn57.value=="0" && btn59.value=="0" && btn61.value=="0")) && lb==0)
+{
+ lb=2;
+ btn55.style="background-color:blue;width:24px;height:20px";
+ btn56.style="background-color:blue;width:24px;height:20px";
+ btn57.style="background-color:blue;width:24px;height:20px";
+ btn58.style="background-color:blue;width:24px;height:20px";
+ btn59.style="background-color:blue;width:24px;height:20px";
+ btn60.style="background-color:blue;width:24px;height:20px";
+ btn61.style="background-color:blue;width:24px;height:20px";
+ btn62.style="background-color:blue;width:24px;height:20px";
+ btn63.style="background-color:blue;width:24px;height:20px";
+}
+if(((btn64.value=="X" && btn65.value=="X" && btn66.value=="X") || (btn67.value=="X" && btn68.value=="X" && btn69.value=="X") || (btn70.value=="X" && btn71.value=="X" && btn72.value=="X") || (btn64.value=="X" && btn67.value=="X" && btn70.value=="X") || (btn65.value=="X" && btn68.value=="X" && btn71.value=="X") || (btn66.value=="X" && btn69.value=="X" && btn72.value=="X") || (btn64.value=="X" && btn68.value=="X" && btn72.value=="X") || (btn66.value=="X" && btn68.value=="X" && btn70.value=="X")) && b==0)
+{
+  b=1; 
+ btn64.style="background-color:red";
+ btn65.style="background-color:red";
+ btn66.style="background-color:red";
+ btn67.style="background-color:red";
+ btn68.style="background-color:red";
+ btn69.style="background-color:red";
+ btn70.style="background-color:red";
+ btn71.style="background-color:red";
+ btn72.style="background-color:red";
+
+}
+if(((btn64.value=="0" && btn65.value=="0" && btn66.value=="0") || (btn67.value=="0" && btn68.value=="0" && btn69.value=="0") || (btn70.value=="0" && btn71.value=="0" && btn72.value=="0") || (btn64.value=="0" && btn67.value=="0" && btn70.value=="0") || (btn65.value=="0" && btn68.value=="0" && btn71.value=="0") || (btn66.value=="0" && btn69.value=="0" && btn72.value=="0") || (btn64.value=="0" && btn68.value=="0" && btn72.value=="0") || (btn66.value=="0" && btn68.value=="0" && btn70.value=="0")) && b==0)
+{
+ b=2;
+ btn64.style="background-color:blue";
+ btn65.style="background-color:blue";
+ btn66.style="background-color:blue";
+ btn67.style="background-color:blue";
+ btn68.style="background-color:blue";
+ btn69.style="background-color:blue";
+ btn70.style="background-color:blue";
+ btn71.style="background-color:blue";
+ btn72.style="background-color:blue";
+}
+if(((btn73.value=="X" && btn74.value=="X" && btn75.value=="X") || (btn76.value=="X" && btn77.value=="X" && btn78.value=="X") || (btn79.value=="X" && btn80.value=="X" && btn81.value=="X") || (btn73.value=="X" && btn76.value=="X" && btn79.value=="X") || (btn74.value=="X" && btn77.value=="X" && btn80.value=="X") || (btn75.value=="X" && btn78.value=="X" && btn81.value=="X") || (btn73.value=="X" && btn77.value=="X" && btn81.value=="X") || (btn75.value=="X" && btn77.value=="X" && btn79.value=="X"))&& rb==0)
+{
+  rb=1; 
+ btn73.style="background-color:red;width:24px;height:20px";
+ btn74.style="background-color:red;width:24px;height:20px";
+ btn75.style="background-color:red;width:24px;height:20px";
+ btn76.style="background-color:red;width:24px;height:20px";
+ btn77.style="background-color:red;width:24px;height:20px";
+ btn78.style="background-color:red;width:24px;height:20px";
+ btn79.style="background-color:red;width:24px;height:20px";
+ btn80.style="background-color:red;width:24px;height:20px";
+ btn81.style="background-color:red;width:24px;height:20px";
+
+}
+if(((btn73.value=="0" && btn74.value=="0" && btn75.value=="0") || (btn76.value=="0" && btn77.value=="0" && btn78.value=="0") || (btn79.value=="0" && btn80.value=="0" && btn81.value=="0") || (btn73.value=="0" && btn76.value=="0" && btn79.value=="0") || (btn74.value=="0" && btn77.value=="0" && btn80.value=="0") || (btn75.value=="0" && btn78.value=="0" && btn81.value=="0") || (btn73.value=="0" && btn77.value=="0" && btn81.value=="0") || (btn75.value=="0" && btn77.value=="0" && btn79.value=="0")) && rb==0)
+{
+ rb=2;
+ btn73.style="background-color:blue;width:24px;height:20px";
+ btn74.style="background-color:blue;width:24px;height:20px";
+ btn75.style="background-color:blue;width:24px;height:20px";
+ btn76.style="background-color:blue;width:24px;height:20px";
+ btn77.style="background-color:blue;width:24px;height:20px";
+ btn78.style="background-color:blue;width:24px;height:20px";
+ btn79.style="background-color:blue;width:24px;height:20px";
+ btn80.style="background-color:blue;width:24px;height:20px";
+ btn81.style="background-color:blue;width:24px;height:20px";
+}
+if((lt==1 && t==1 && rt==1) || (lc==1 && c==1 && rc==1) || (lb==1 && b==1 && rb==1) || (lt==1 && lc==1 && lc==1) || (t==1 && c==1 && b==1) || (rt==1 && rc==1 && rb==1) || (lt==1 && c==1 && rb==1) || (rt==1 && c==1 && lb==1))
+{
+  alert("победили крестики")
+  if (true) newgame();
+}
+if((lt==2 && t==2 && rt==2) || (lc==2 && c==2 && rc==2) || (lb==2 && b==2 && rb==2) || (lt==2 && lc==2 && lc==2) || (t==2 && c==2 && b==2) || (rt==2 && rc==2 && rb==2) || (lt==2 && c==2 && rb==2) || (rt==2 && c==2 && lb==2))
+{
+  alert("победили нолики")
+   if (true) newgame();
+}
+}
+
+ </script>
+ <div class = "center">
+ <input type="button"  value="Новая игра" style="width:275px;height:20px;margin-top: 10px; text-align:center" id="newgame1" onclick="newgame()">
+ </div>
+ <script>
+function newgame()
+{
+  i=0;
+  a=0;
+ var lt=0;
+ var t=0;
+ var rt=0;
+ var lc=0;
+ var c=0;
+ var rc=0;
+ var lb=0;
+ var b=0;
+ var rb=0;
+  btn1.value="";
+  btn2.value="";
+  btn3.value="";
+  btn4.value="";
+  btn5.value="";
+  btn6.value="";
+  btn7.value="";
+  btn8.value="";
+  btn9.value="";
+  btn10.value="";
+  btn11.value="";
+  btn12.value="";
+  btn13.value="";
+  btn14.value="";
+  btn15.value="";
+  btn16.value="";
+  btn17.value="";
+  btn18.value="";
+  btn19.value="";
+  btn20.value="";
+  btn21.value="";
+  btn22.value="";
+  btn23.value="";
+  btn24.value="";
+  btn25.value="";
+  btn26.value="";
+  btn27.value=""; 
+  btn28.value="";
+  btn29.value="";
+  btn30.value="";
+  btn31.value="";
+  btn32.value="";
+  btn33.value="";
+  btn34.value="";
+  btn35.value="";
+  btn36.value="";
+  btn37.value=""; 
+  btn38.value="";
+  btn39.value="";
+  btn40.value="";
+  btn41.value="";
+  btn42.value="";
+  btn43.value="";
+  btn44.value="";
+  btn45.value="";
+  btn46.value="";
+  btn47.value=""; 
+  btn48.value="";
+  btn49.value="";
+  btn50.value="";
+  btn51.value="";
+  btn52.value="";
+  btn53.value="";
+  btn54.value="";
+  btn55.value="";
+  btn56.value="";
+  btn57.value=""; 
+  btn58.value="";
+  btn59.value="";
+  btn60.value="";
+  btn61.value="";
+  btn62.value="";
+  btn63.value="";
+  btn64.value="";
+  btn65.value="";
+  btn66.value="";
+  btn67.value=""; 
+  btn68.value="";
+  btn69.value="";
+  btn70.value="";
+  btn71.value="";
+  btn72.value="";
+  btn73.value="";
+  btn74.value="";
+  btn75.value="";
+  btn76.value="";
+  btn77.value=""; 
+  btn78.value="";
+  btn79.value="";
+ btn80.value="";
+ btn81.value="";
+ btn1.style="width:24px;height:20px";
+ btn2.style="width:24px;height:20px";
+ btn3.style="width:24px;height:20px";
+ btn4.style="width:24px;height:20px";
+ btn5.style="width:24px;height:20px";
+ btn6.style="width:24px;height:20px";
+ btn7.style="width:24px;height:20px";
+ btn8.style="width:24px;height:20px";
+ btn9.style="width:24px;height:20px";
+ btn10.style="width:24px;height:20px";
+ btn11.style="width:24px;height:20px";
+ btn12.style="width:24px;height:20px";
+ btn13.style="width:24px;height:20px";
+ btn14.style="width:24px;height:20px";
+ btn15.style="width:24px;height:20px";
+ btn16.style="width:24px;height:20px";
+ btn17.style="width:24px;height:20px";
+ btn18.style="width:24px;height:20px";
+ btn19.style="width:24px;height:20px";
+ btn20.style="width:24px;height:20px";
+ btn21.style="width:24px;height:20px";
+ btn22.style="width:24px;height:20px";
+ btn23.style="width:24px;height:20px";
+ btn24.style="width:24px;height:20px";
+ btn25.style="width:24px;height:20px";
+ btn26.style="width:24px;height:20px";
+ btn27.style="width:24px;height:20px";
+ btn28.style="width:24px;height:20px";
+ btn29.style="width:24px;height:20px";
+ btn30.style="width:24px;height:20px";
+ btn31.style="width:24px;height:20px";
+ btn32.style="width:24px;height:20px";
+ btn33.style="width:24px;height:20px";
+ btn34.style="width:24px;height:20px";
+ btn35.style="width:24px;height:20px";
+ btn36.style="width:24px;height:20px";
+ btn37.style="width:24px;height:20px";
+ btn38.style="width:24px;height:20px";
+ btn39.style="width:24px;height:20px";
+ btn40.style="width:24px;height:20px";
+ btn41.style="width:24px;height:20px";
+ btn42.style="width:24px;height:20px";
+ btn43.style="width:24px;height:20px";
+ btn44.style="width:24px;height:20px";
+ btn45.style="width:24px;height:20px";
+ btn46.style="width:24px;height:20px";
+ btn47.style="width:24px;height:20px";
+ btn48.style="width:24px;height:20px";
+ btn49.style="width:24px;height:20px";
+ btn50.style="width:24px;height:20px";
+ btn51.style="width:24px;height:20px";
+ btn52.style="width:24px;height:20px";
+ btn53.style="width:24px;height:20px";
+ btn54.style="width:24px;height:20px";
+ btn55.style="width:24px;height:20px";
+ btn56.style="width:24px;height:20px";
+ btn57.style="width:24px;height:20px";
+ btn58.style="width:24px;height:20px";
+ btn59.style="width:24px;height:20px";
+ btn60.style="width:24px;height:20px";
+ btn61.style="width:24px;height:20px";
+ btn62.style="width:24px;height:20px";
+ btn63.style="width:24px;height:20px";
+ btn64.style="width:24px;height:20px";
+ btn65.style="width:24px;height:20px";
+ btn66.style="width:24px;height:20px";
+ btn67.style="width:24px;height:20px";
+ btn68.style="width:24px;height:20px";
+ btn69.style="width:24px;height:20px";
+ btn70.style="width:24px;height:20px";
+ btn71.style="width:24px;height:20px";
+ btn72.style="width:24px;height:20px";
+ btn73.style="width:24px;height:20px";
+ btn74.style="width:24px;height:20px";
+ btn75.style="width:24px;height:20px";
+ btn76.style="width:24px;height:20px";
+ btn77.style="width:24px;height:20px";
+ btn78.style="width:24px;height:20px";
+ btn79.style="width:24px;height:20px";
+ btn80.style="width:24px;height:20px";
+ btn81.style="width:24px;height:20px";
+  btn.value="Ходят крестики"
+}
+ </script>
+ </body>
+</html>
